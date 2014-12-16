@@ -345,7 +345,7 @@ sofa.define('sofa.checkoutservice.CheckoutMethodsRequestConverter', function () 
         }
 
         setIfDefinedAndNotNull(requestModel, 'currency', checkoutModel.currency);
-        setIfDefinedAndNotNull(requestModel, 'payment', checkoutModel.payment);
+        setIfDefinedAndNotNull(requestModel, 'payment', checkoutModel.selectedPaymentMethod);
         setIfDefinedAndNotNull(requestModel, 'shipping', checkoutModel.selectedShippingMethod);
         setIfDefinedAndNotNull(requestModel, 'items', items);
         setIfDefinedAndNotNull(requestModel, 'discounts', checkoutModel.discounts || []);
